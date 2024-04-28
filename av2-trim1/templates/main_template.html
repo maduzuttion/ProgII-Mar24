@@ -10,5 +10,16 @@
 </head>
 <body>
     <h1>Loja de conveniência</h1>
+    <a href="{{url for('inicio')}}">Página Inicia</a>
+    <a href="{{url for('sobre')}}">Sobre</a>
+    <a href="{{url for('listar_prod')}}">Listar produtos</a>
+    <a href="{{url for('form_prod')}}">Cadastrar novo produto</a>
+
+    <section class="content">
+        <header> {% block header %}{% endblock %} </header>
+
+        {% block content %}{% endblock %}
+    </section>
+
 </body>
 </html>
