@@ -38,3 +38,5 @@ with db_session:#iniciando sessão
     print("depois da exclusão:")
     for p in pessoas:
         print(p)
+
+#Feito pelo professor

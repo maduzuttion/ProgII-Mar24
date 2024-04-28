@@ -26,3 +26,5 @@ with db_session:#iniciando sessão
     print("carros:")# mostrar os carros da pessoa
     for c in p1.cars:
         print("*", c.make, c.model)
+
+#Feito pelo professor

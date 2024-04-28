@@ -14,3 +14,4 @@ def soma():
     return render_template("sum.html", total = sum)
 
 # $ flask run
+# Feito pelo professor

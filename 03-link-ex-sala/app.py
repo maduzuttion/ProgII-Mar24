@@ -13,3 +13,5 @@ def about():
 @app.route("/table")#rota para puxar o template table.html
 def tabela():
     return render_template("table.html")
+
+#Feito pelo professor

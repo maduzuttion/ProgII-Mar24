@@ -17,3 +17,5 @@ with db_session:# iniciando a sessão
     jo = Pessoa(nome='João da Silva', email='josilva@gmail.com')# passando os dados
     commit()# salvando os dados
     print(jo.nome, jo.email)# exibindo os dados
+
+#Feito pelo professor

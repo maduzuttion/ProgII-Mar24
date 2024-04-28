@@ -39,3 +39,5 @@ with db_session:#Iniciando sessão
 
     print(v1)
     print(v2)
+
+# Feito pelo professor

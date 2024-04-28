@@ -5,5 +5,5 @@ c) sistema operante (vídeo demonstrando funcionamento ou sistema online) e hosp
 d) código organizado hospedado em repositório público com pelo menos 3 commits
 e) acompanhamento realizado durante as aulas (realização de exercícios ou desenvolvimento)
 
-Tema:
+Tema: Loja de conveniência
 Link - pythonanywhere:
