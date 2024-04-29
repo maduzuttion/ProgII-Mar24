@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Soma</title>
+
+</head>
+
+<body style="background-color:powderblue;">
+
+    <h1>Elemento de formulário</h1>
+
+    <form action="{{ url_for('form')}}" >
+
+        <p>
+            Uma caixa de texto: <input type="text" name="campo_caixa" value="{{ valores[0] }}">
+        </p>
+
+        <p>
+            Uma área de texto:
+            <textarea name="campo_area" row="3">{{ valores[1] }}</textarea>
+        </p>
+
+        <p>
+            Escolha uma pessoa para ser o motorista:
+            <select name="campo_select">
+                <option value="5" {% if valores[2]=="5" %} selected {% endif %}>João da Silva</option>
+                <option value="7" {% if valores[2]=="7" %} selected {% endif %}>Maria Oliveira</option>
+                <option value="19" {% if valores[2]=="19" %} selected {% endif %}>Paulo Stein</option>
+                <option value="20" {% if valores[2]=="20" %} selected {% endif %}>Fred Soul</option>
+            </select>
+        </p>
+
+        <p>
+            Qual é a melhor cor para você? <br />
+            <input type="radio" name="campo_radio" value="azul" {% if valores[3]=="azul" %} checked {% endif %}>Azul<br />
+            <input type="radio" name="campo_radio" value="verde" {% if valores[3]=="verde" %} checked {% endif %}>Verde<br />
+            <input type="radio" name="campo_radio" value="rosachoque" {% if valores[3]=="rosachoque" %} checked {% endif %}>Rosa Choque<br />
+            <input type="radio" name="campo_radio" value="turquesa" {% if valores[3]=="turquesa" %} checked {% endif %}>Turquesa
+        </p>
+
+        <p>
+            Qual é o seu navegador favorito?
+            <input list="browsers" name="campo_datalist" value="{{ valores[4] }}">
+            <datalist id="browsers">
+                <option value="Edge">
+                <option value="Firefox">
+                <option value="Chrome">
+                <option value="Opera">
+                <option value="Safari">
+            </datalist>
+        </p>
+
+        <p>
+            Qual é a sua idade?
+            <input type="range" name="campo_caixa_idade" id="a" value="{{ valores[5] }}" oninput="x.value=parseInt(a.value)">
+            <output name="campo_output" id="x" for="campo_output" value="{{ valores[5] }}"></output>
+        </p>
+
+        <p>
+            Quais tipos de comida você gosta? <br />
+
+            <input type="checkbox" name="campo_salgada" value="salgada" 
+                {% if "salgada" in valores[6] %} checked {% endif %}>Salgada<br />
+            <input type="checkbox" name="campo_doce" value="doce" 
+                {% if "doce" in valores[6] %} checked {% endif %}>Doce<br />
+            <input type="checkbox" name="campo_mineira" value="mineira"
+                {% if "mineira" in valores[6] %} checked {% endif %}>Mineira<br />
+            <input type="checkbox" name="campo_tailandesa" value="tailandesa"
+                {% if "tailandesa" in valores[6] %} checked {% endif %}>Tailandesa<br />
+        </p>
+
+        <button>Enviar!!!</button>
+
+        <!-- reference:
+    https://www.w3schools.com/html/html_form_elements.asp
+    -->
+
+    </form>
+
+</body>
+
+</html>

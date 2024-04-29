@@ -1,0 +1,27 @@
+{% extends 'main_template.html' %}
+
+{% block header %}
+  <h1>{% block title %}Exemplo de tabela{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  
+<table border="1">
+    <tr>
+        <td>Nome</td>
+        <td>Email</td>
+        <td>Telefone</td>
+    </tr>
+    <tr>
+        <td>João da Silva</td>
+        <td>josilva@gmail.com</td>
+        <td>47-99878-7865</td>
+    </tr>
+    <tr>
+        <td>Maria Oliveira</td>
+        <td>maliv@gmail.com</td>
+        <td>47-99231-1245</td>
+    </tr>
+</table>
+
+{% endblock %}
