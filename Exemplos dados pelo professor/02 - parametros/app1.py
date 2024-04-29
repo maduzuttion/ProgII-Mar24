@@ -12,6 +12,6 @@ def soma():
     b = int(request.args.get('n2'))
     return str(a+b)
 
-# $ flask run
-#pesquisar no navegador: localhost:5000/soma?n1=5&n2=10
-###Sendo escrito os números na barra de pesquisa como mostrado anteriormente
+# $ flask --app app1 run
+#pesquisar no navegador: localhost:5000/soma?n1=5&n2=10 -----> resultato da soma aparente:15
+#números escritos na barra de pesquisa

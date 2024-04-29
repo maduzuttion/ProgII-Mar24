@@ -6,6 +6,7 @@ app = Flask(__name__)
 def hello_world():
     return "<p>Olá mundo!</p>"
 
-# $ flask run
+# $ flask --app 02-basic run
 # Acessar no navegador: https://localhost:5000 ou https://127.0.0.1:5000
-# Na internet: $ flask run --host=0.0.0.0
+# Na internet: $ flask --app 02-basic run --host=0.0.0.0
+#Feito pelo professor

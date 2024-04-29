@@ -12,4 +12,5 @@ def soma(n1, n2):
     b = int(n2)
     return f'A soma é: <h2>{a+b}</h2>'
 
+#flask --app app2 run
 #Para acessar no navegador: localhost:5000/soma/5/10
